@@ -12,9 +12,8 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
 export default class IndexPage extends Vue {
-  public mounted() {
+public fds  public mounted() {
     sdfconst a = 0;
-  }
 }
 </script>
 
