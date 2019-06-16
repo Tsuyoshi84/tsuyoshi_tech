@@ -1,4 +1,6 @@
+// tslint:disable-next-line:no-implicit-dependencies
 import NuxtConfiguration from '@nuxt/config'
+import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin'
 
 const config: NuxtConfiguration = {
   mode: 'spa',
@@ -39,7 +41,14 @@ const config: NuxtConfiguration = {
   /*
    ** Build configuration
    */
-  build: {}
+  build: {
+    plugins: [
+      new ForkTsCheckerWebpackPlugin({
+        tslint: true,
+        vue: true
+      })
+    ]
+  }
 }
 
 export default config

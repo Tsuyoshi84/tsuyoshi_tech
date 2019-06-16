@@ -16,5 +16,7 @@
       "~/*": ["./*"]
     },
     "types": ["@nuxt/vue-app", "@types/node"]
-  }
+  },
+  "include": ["./**/*.ts", "./**/*.vue"],
+  "exclude": ["node_modules"]
 }
