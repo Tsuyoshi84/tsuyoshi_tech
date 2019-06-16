@@ -42,6 +42,7 @@ const config: NuxtConfiguration = {
    ** Build configuration
    */
   build: {
+    quiet: false,
     plugins: [
       new ForkTsCheckerWebpackPlugin({
         tslint: true,
