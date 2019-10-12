@@ -9,6 +9,13 @@
     "allowJs": true,
     "sourceMap": true,
     "strict": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedParameters": true,
     "noEmit": true,
     "baseUrl": ".",
     "paths": {
