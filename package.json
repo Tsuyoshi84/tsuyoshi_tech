@@ -23,7 +23,11 @@
   "devDependencies": {
     "@nuxt/typescript-build": "^0.3.1",
     "@types/node": "10.14.8",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-prettier": "^3.1.1",
     "prettier": "^1.16.4",
-    "typescript": "^3.3.3"
+    "typescript": "^3.3.3",
+    "vue-eslint-parser": "^6.0.4"
   }
 }
