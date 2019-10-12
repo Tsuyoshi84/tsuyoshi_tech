@@ -1,6 +1,6 @@
-import NuxtConfiguration from '@nuxt/config'
+import { Configuration } from '@nuxt/types'
 
-const config: NuxtConfiguration = {
+const config: Configuration = {
   mode: 'spa',
 
   /*
@@ -30,6 +30,11 @@ const config: NuxtConfiguration = {
    ** Plugins to load before mounting the App
    */
   plugins: [],
+
+  /*
+   ** Nuxt.js dev-modules
+   */
+  buildModules: ['@nuxt/typescript-build'],
 
   /*
    ** Nuxt.js modules

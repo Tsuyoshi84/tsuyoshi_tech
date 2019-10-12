@@ -6,15 +6,16 @@
     "lib": ["esnext", "esnext.asynciterable", "dom"],
     "esModuleInterop": true,
     "experimentalDecorators": true,
+    "allowJs": true,
     "sourceMap": true,
     "strict": true,
-    "allowSyntheticDefaultImports": true,
     "noEmit": true,
     "baseUrl": ".",
-    "resolveJsonModule": true,
     "paths": {
-      "~/*": ["./*"]
+      "~/*": ["./*"],
+      "@/*": ["./*"]
     },
-    "types": ["@nuxt/vue-app", "@types/node"]
-  }
+    "types": ["@types/node", "@nuxt/types"]
+  },
+  "exclude": ["node_modules"]
 }
