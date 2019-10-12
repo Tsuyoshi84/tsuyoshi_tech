@@ -6,7 +6,6 @@ module.exports = {
   },
   rules: {
     'no-console': ['error', { allow: ['warn', 'error'] }],
-    '@typescript-eslint/explicit-function-return-type': 2,
     'vue/singleline-html-element-content-newline': 0,
     'vue/html-self-closing': 0,
     'vue/attributes-order': 0
