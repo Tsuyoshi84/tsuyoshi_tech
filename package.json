@@ -5,22 +5,23 @@
   "author": "Tsuyoshi Yamaguchi",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "analyze": "nuxt build --analyze",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "analyze": "nuxt-ts build --analyze",
+    "start": "nuxt-ts start",
+    "generate": "nuxt-ts generate",
     "precommit": "npm run lint",
     "test": "jest"
   },
   "dependencies": {
+    "@nuxt/typescript-runtime": "^0.2.1",
     "normalize.css": "^8.0.1",
     "nuxt": "^2.8.0",
     "ts-node": "^8.2.0",
     "vue-property-decorator": "^8.1.1"
   },
   "devDependencies": {
-    "@nuxt/typescript": "^2.8.0",
+    "@nuxt/typescript-build": "^0.3.1",
     "@types/node": "10.14.8",
     "prettier": "^1.16.4",
     "typescript": "^3.3.3"
