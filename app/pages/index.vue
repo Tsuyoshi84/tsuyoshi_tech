@@ -1,10 +1,8 @@
-<template>
-  <section class="container">
-    <div>
-      <h1 class="title">Tsuyoshi Yamaguchi</h1>
-      <h2 class="subtitle">home page</h2>
-    </div>
-  </section>
+<template lang="pug">
+section.container
+  div
+    h1.title Tsuyoshi Yamaguchi
+    h2.subtitle home page
 </template>
 
 <script lang="ts">
