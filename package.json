@@ -5,7 +5,7 @@
   "author": "Tsuyoshi Yamaguchi",
   "private": true,
   "scripts": {
-    "dev": "nuxt-ts dev",
+    "dev": "nuxt-ts",
     "build": "nuxt-ts build",
     "analyze": "nuxt-ts build --analyze",
     "start": "nuxt-ts start",
