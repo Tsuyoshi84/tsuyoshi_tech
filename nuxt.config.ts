@@ -25,7 +25,7 @@ const config: Configuration = {
   /*
    ** Global CSS
    */
-  css: ['normalize.css'],
+  css: ['normalize.css', '~/css/app.sass'],
 
   /*
    ** Plugins to load before mounting the App
