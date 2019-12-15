@@ -1,15 +1,8 @@
 <template lang="pug">
 section.container
-  div
-    h1.title Tsuyoshi Yamaguchi
+  h1.title Experience
 </template>
 
-<script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
-
-@Component
-export default class extends Vue {}
-</script>
 
 <style lang="sass" scoped>
 .container
