@@ -22,8 +22,15 @@ export default class extends Vue {}
   justify-content: center
   padding-top: 1.5rem
   padding-bottom: 1.5rem
+  border-bottom: 1px solid #eee
+  transition: color 0.4s ease
 
   .link
     margin: 0 1rem
     font-size: 2.0rem
+    color: #5d5d5d
+    &:hover
+      color: #2d2d2d
+    &.nuxt-link-exact-active
+      color: #160fca
 </style>
