@@ -8,6 +8,9 @@ const config: Configuration = {
    ** Headers of the page
    */
   head: {
+    htmlAttrs: {
+      lang: 'en-US'
+    },
     title: 'Tsuyoshi Yamaguchi',
     meta: [
       { charset: 'utf-8' },
