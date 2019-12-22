@@ -24,7 +24,29 @@ jobs:
       - run: yarn test
       - codecov/upload:
           file: ./coverage/lcov.info
+      - persist_to_workspace:
+          root: ~/repo
+          paths:
+            - ./dist
+
+  lighthouse:
+    docker:
+      - image: circleci/node:12.3-browsers
+    working_directory: ~/repo
+    steps:
+      - attach_workspace:
+          at: /tmp/workspace
       - run: sudo npm install -g @lhci/cli@0.3.x
       - run:
           name: lhci autorun
+          workspace: /tmp/workspace
           command: yarn lhci || echo "LHCI failed!"
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build
+      - lighthouse:
+          requires:
+            - build
