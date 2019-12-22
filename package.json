@@ -12,7 +12,8 @@
     "generate": "nuxt-ts generate",
     "precommit": "npm run lint",
     "lint": "eslint 'app/**/*.{ts,vue}'",
-    "test": "jest"
+    "test": "jest",
+    "lhci": "lhci autorun"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^0.3.2",

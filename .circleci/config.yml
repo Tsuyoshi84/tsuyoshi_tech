@@ -24,3 +24,7 @@ jobs:
       - run: yarn test
       - codecov/upload:
           file: ./coverage/lcov.info
+      - run: sudo npm install -g @lhci/cli@0.3.x
+      - run:
+          name: lhci autorun
+          command: yarn lhci || echo "LHCI failed!"
