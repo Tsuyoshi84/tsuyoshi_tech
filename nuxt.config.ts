@@ -48,7 +48,19 @@ const config: Configuration = {
   /*
    ** Build configuration
    */
-  build: {}
+  build: {
+    // use extend() method for nuxt
+    // use extendWebpack() method for quasar
+    extend(config, _) {
+      config.module!.rules.push({
+        test: /\.vue$/,
+        loader: 'vue-svg-inline-loader',
+        options: {
+          /* ... */
+        }
+      })
+    }
+  }
 }
 
 export default config

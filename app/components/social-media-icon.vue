@@ -1,6 +1,6 @@
 <template lang="pug">
   div.box
-    img.icon(alt='github' src='@/assets/svgs/github-brands.svg')
+    slot
 </template>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
@@ -11,16 +11,23 @@ export default class extends Vue {}
 
 <style lang="sass" scoped>
 .box
-  width: 20rem
-  height: 20rem
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 10rem
+  height: 10rem
   border: solid 1px #e1e1e1
   border-radius: 50%
   padding: 1rem
   box-shadow: 1px 1px 2px 0px #a8a8a8
   transition: all 0.2s
   cursor: pointer
+  background-color: white
+  color: #aaa
+  fill: currentColor
 
   &:hover
-    transform: rotate(25deg) translate(-2px, -2px) scale(1.01, 1.01)
-    box-shadow: 3px 3px 5px 2px #a8a8a8
+    transform: rotate(-15deg) translate(-2px, -2px) scale(1.1, 1.1)
+    box-shadow: 4px 4px 4px 3px #a8a8a8
+    color: black
 </style>
