@@ -1,8 +1,15 @@
 <template lang="pug">
 section.container
-  h1.title Contact
+  social-media-icon
 </template>
 
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator'
+import SocialMediaIcon from '~/components/social-media-icon.vue'
+
+@Component({ components: { SocialMediaIcon } })
+export default class extends Vue {}
+</script>
 
 <style lang="sass" scoped>
 .container
