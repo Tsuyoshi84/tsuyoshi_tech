@@ -1,6 +1,6 @@
 <template lang="pug">
   div.box
-    img.icon(svg-inline='' src='@/assets/svgs/github-brands.svg')
+    img.icon(alt='github' src='@/assets/svgs/github-brands.svg')
 </template>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
