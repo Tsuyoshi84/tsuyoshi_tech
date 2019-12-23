@@ -1,12 +1,15 @@
 <template lang="pug">
   div.box
-    slot
+    a.link-icon(:href="href")
+      slot
 </template>
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue, Prop } from 'vue-property-decorator'
 
 @Component({})
-export default class extends Vue {}
+export default class extends Vue {
+  @Prop() href!: string
+}
 </script>
 
 <style lang="sass" scoped>
@@ -16,18 +19,21 @@ export default class extends Vue {}
   justify-content: center
   width: 10rem
   height: 10rem
-  border: solid 1px #e1e1e1
+  border: solid 1px #eee
   border-radius: 50%
   padding: 1rem
-  box-shadow: 1px 1px 2px 0px #a8a8a8
   transition: all 0.2s
   cursor: pointer
   background-color: white
-  color: #aaa
   fill: currentColor
+  .link-icon
+    color: #aaa
 
   &:hover
     transform: rotate(-15deg) translate(-2px, -2px) scale(1.1, 1.1)
+    border: solid 1px #e1e1e1
     box-shadow: 4px 4px 4px 3px #a8a8a8
-    color: black
+
+    .link-icon
+      color: black
 </style>

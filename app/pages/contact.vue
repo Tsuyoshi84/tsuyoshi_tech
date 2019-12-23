@@ -1,35 +1,13 @@
-<template>
-  <section class="container">
-    <social-media-icon>
-      <img
-        class="icon"
-        svg-inline
-        alt="github"
-        src="@/assets/svgs/github-brands.svg"
-      /> </social-media-icon
-    ><social-media-icon>
-      <img
-        class="icon"
-        svg-inline
-        alt="facebook"
-        src="@/assets/svgs/facebook-f-brands.svg"
-      /> </social-media-icon
-    ><social-media-icon>
-      <img
-        class="icon"
-        svg-inline
-        alt="twitter"
-        src="@/assets/svgs/twitter-brands.svg"
-      /> </social-media-icon
-    ><social-media-icon>
-      <img
-        class="icon"
-        svg-inline
-        alt="linked in"
-        src="@/assets/svgs/linkedin-in-brands.svg"
-      />
-    </social-media-icon>
-  </section>
+<template lang="pug">
+section.container
+  social-media-icon(href="https://github.com/Tsuyoshi84")
+    include ../assets/svgs/github-brands.svg
+  social-media-icon(href="https://www.facebook.com/tsuyoshi.yamaguchi.1232")
+    include ../assets/svgs/facebook-f-brands.svg
+  social-media-icon(href="https://twitter.com/tsuyoshi84")
+    include ../assets/svgs/twitter-brands.svg
+  social-media-icon(href="https://www.linkedin.com/in/tsuyoshi-yamaguchi-94954a96")
+    include ../assets/svgs/linkedin-in-brands.svg
 </template>
 
 <script lang="ts">
@@ -49,15 +27,9 @@ export default class extends Vue {}
   align-items: center
   text-align: center
 
-.title
+svg
+  height: 8rem
+  width: 8rem
   display: block
-  font-weight: 300
-  font-size: 100px
-  color: #35495e
-  letter-spacing: 1px
-
-.icon
-  height: 85%
-  width: 85%
   fill: currentColor
 </style>
