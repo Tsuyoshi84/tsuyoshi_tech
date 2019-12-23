@@ -1,6 +1,6 @@
 <template lang="pug">
   div.box
-    a.link-icon(:href="href")
+    a.link-icon(:href="href" :style="{color: currentColor}" @mouseover="isHover = true" @mouseleave="isHover = false")
       slot
 </template>
 <script lang="ts">
@@ -8,7 +8,13 @@ import { Component, Vue, Prop } from 'vue-property-decorator'
 
 @Component({})
 export default class extends Vue {
-  @Prop() href!: string
+  isHover = false
+  @Prop({ required: true }) href!: string
+  @Prop({ required: true }) color!: string
+
+  get currentColor(): string {
+    return this.isHover ? this.color : 'currentColor'
+  }
 }
 </script>
 
@@ -25,7 +31,7 @@ export default class extends Vue {
   transition: all 0.2s
   cursor: pointer
   background-color: white
-  fill: currentColor
+  color: #aaa
   .link-icon
     color: #aaa
 
