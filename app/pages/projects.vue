@@ -3,6 +3,14 @@ section.container
   h1.title Projects
 </template>
 
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator'
+
+@Component({
+  head: { title: 'Projects' }
+})
+export default class extends Vue {}
+</script>
 
 <style lang="sass" scoped>
 .container
