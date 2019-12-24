@@ -25,7 +25,7 @@ export default class extends Vue {
   justify-content: center
   width: 10rem
   height: 10rem
-  border: solid 1px #eee
+  border: solid 1px #fff
   border-radius: 50%
   padding: 1rem
   transition: all 0.3s

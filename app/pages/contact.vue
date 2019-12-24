@@ -14,7 +14,10 @@ section.container
 import { Component, Vue } from 'vue-property-decorator'
 import SocialMediaIcon from '~/components/social-media-icon.vue'
 
-@Component({ components: { SocialMediaIcon } })
+@Component({
+  components: { SocialMediaIcon },
+  head: { title: 'Contact' }
+})
 export default class extends Vue {}
 </script>
 
