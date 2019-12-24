@@ -1,6 +1,6 @@
 <template lang="pug">
   div.box(@mouseover="isHover = true" @mouseleave="isHover = false")
-    a.link-icon(:href="href" :style="{color: currentColor}")
+    a.link-icon(:href="href" :style="{color: currentColor}" :alt="alt")
       slot
 </template>
 <script lang="ts">
@@ -11,6 +11,7 @@ export default class extends Vue {
   isHover = false
   @Prop({ required: true }) href!: string
   @Prop({ required: true }) color!: string
+  @Prop({ default: '' }) alt!: string
 
   get currentColor(): string {
     return this.isHover ? this.color : 'currentColor'

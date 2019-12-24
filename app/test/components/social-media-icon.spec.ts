@@ -3,7 +3,7 @@ import SocialMediaIcon from '@/components/social-media-icon.vue'
 
 const makeWrapper = () => {
   return mount(SocialMediaIcon, {
-    propsData: { href: 'https://example.com', color: 'red' },
+    propsData: { alt: 'Example', href: 'https://example.com', color: 'red' },
     slots: {
       default: '<div>slot-content</div>'
     },
