@@ -1,6 +1,6 @@
 <template lang="pug">
   div.box(@mouseover="isHover = true" @mouseleave="isHover = false")
-    a.link-icon(:href="href" :style="{color: currentColor}" :alt="alt")
+    a.link-icon(:href="href" :style="{color: currentColor}" :alt="alt" :aria-label="alt")
       slot
 </template>
 <script lang="ts">

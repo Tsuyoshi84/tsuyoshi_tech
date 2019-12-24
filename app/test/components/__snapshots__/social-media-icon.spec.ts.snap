@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SocialMediaIcon when hover should use given color 1`] = `
-<div class="box"><a href="https://example.com" alt="Example" class="link-icon" style="color: red;">
+<div class="box"><a href="https://example.com" alt="Example" aria-label="Example" class="link-icon" style="color: red;">
     <div>slot-content</div>
   </a></div>
 `;
 
 exports[`SocialMediaIcon when not hover should use default color 1`] = `
-<div class="box"><a href="https://example.com" alt="Example" class="link-icon" style="color: currentColor;">
+<div class="box"><a href="https://example.com" alt="Example" aria-label="Example" class="link-icon" style="color: currentColor;">
     <div>slot-content</div>
   </a></div>
 `;
