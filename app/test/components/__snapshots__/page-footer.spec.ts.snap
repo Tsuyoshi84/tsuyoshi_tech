@@ -1,3 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PageFooter generate DOM 1`] = `<footer><span>Using <a href="https://fontawesome.com/license" alt="Font Awesome">Font Awesome </a></span></footer>`;
+exports[`PageFooter generate DOM 1`] = `<footer><span>This site is using <a href="https://fontawesome.com/license" alt="Font Awesome">Font Awesome </a></span></footer>`;
