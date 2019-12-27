@@ -1,18 +1,18 @@
 <template lang="pug">
 section
-  navigation-bar
+  page-header
   main
     nuxt
-    ts-footer
+  page-footer
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import NavigationBar from '~/components/navigation-bar.vue'
-import TsFooter from '~/components/ts-footer.vue'
+import PageHeader from '~/components/page-header.vue'
+import PageFooter from '~/components/page-footer.vue'
 
 @Component({
-  components: { NavigationBar, TsFooter }
+  components: { PageHeader, PageFooter }
 })
 export default class extends Vue {}
 </script>
