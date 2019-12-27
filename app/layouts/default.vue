@@ -1,9 +1,9 @@
 <template lang="pug">
 section
-  navigation-bar
+  page-header
   main
     nuxt
-  ts-footer
+  page-footer
 </template>
 
 <script lang="ts">
