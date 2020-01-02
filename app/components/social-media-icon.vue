@@ -1,6 +1,6 @@
 <template lang="pug">
   div.box(@mouseover="isHover = true" @mouseleave="isHover = false")
-    a.link-icon(:href="href" :style="{color: currentColor}" :alt="alt" :aria-label="alt")
+    a.link-icon(:href="href" :style="{color: currentColor}" :alt="alt" :aria-label="alt" @focus="isHover = true" @blur="isHover = false")
       slot
 </template>
 <script lang="ts">
@@ -21,6 +21,9 @@ export default class extends Vue {
 
 <style lang="sass" scoped>
 .box
+  color: #aaa
+
+.link-icon
   display: flex
   align-items: center
   justify-content: center
@@ -32,15 +35,10 @@ export default class extends Vue {
   transition: all 0.3s
   cursor: pointer
   background-color: white
-  color: #aaa
-  .link-icon
-    color: #aaa
 
-  &:hover
+  &:hover, &:active, &:focus
     transform: rotate(-10deg) translate(-2px, -2px) scale(1.1, 1.1)
     border: solid 1px #e1e1e1
     box-shadow: 4px 4px 4px 3px #a8a8a8
-
-    .link-icon
-      color: black
+    outline: none
 </style>
