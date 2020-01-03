@@ -2,26 +2,42 @@ version: 2.1
 
 orbs:
   codecov: codecov/codecov@1.0.2
+  percy: percy/agent@volatile
 
-jobs:
-  build:
-    docker:
-      - image: circleci/node:12.3
-    working_directory: ~/repo
+commands:
+  restore_npm_cache:
+    description: 'Restore npm cache'
     steps:
-      - checkout
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
             - v1-dependencies-
-      - run: yarn install
+  save_npm_cache:
+    description: 'Save npm cache'
+    steps:
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
+  prepare_code:
+    description: 'Prepare source code'
+    steps:
+      - checkout
+      - restore_npm_cache
+      - run: yarn install
+
+jobs:
+  build_test:
+    docker:
+      - image: circleci/node:12.3-browsers
+    working_directory: ~/repo
+    steps:
+      - prepare_code
+      - save_npm_cache
       - run: yarn lint
       - run: yarn build
       - run: yarn test
+      - run: yarn test:percy
       - codecov/upload:
           file: ./coverage/lcov.info
 
@@ -30,12 +46,7 @@ jobs:
       - image: circleci/node:12.3-browsers
     working_directory: ~/repo
     steps:
-      - checkout
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            - v1-dependencies-
-      - run: yarn install
+      - prepare_code
       - run: yarn build
       - run: sudo npm install -g @lhci/cli@0.3.x
       - run:
@@ -46,7 +57,10 @@ workflows:
   version: 2
   build:
     jobs:
-      - build
+      - build_test
       - lighthouse:
           requires:
-            - build
+            - build_test
+      - percy/finalize_all:
+          requires:
+            - build_test
