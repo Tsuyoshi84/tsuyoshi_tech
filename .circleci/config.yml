@@ -60,7 +60,7 @@ workflows:
       - build_test
       - lighthouse:
           requires:
-            - build
+            - build_test
       - percy/finalize_all:
           requires:
-            - build
+            - build_test
