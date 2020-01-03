@@ -29,7 +29,7 @@ commands:
 jobs:
   build_test:
     docker:
-      - image: circleci/node:12.3
+      - image: circleci/node:12.3-browsers
     working_directory: ~/repo
     steps:
       - prepare_code
