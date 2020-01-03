@@ -19,6 +19,12 @@ commands:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
+  prepare_code:
+    description: 'Prepare source code'
+    steps:
+      - checkout
+      - restore_npm_cache
+      - run: yarn install
 
 jobs:
   build:
@@ -26,9 +32,7 @@ jobs:
       - image: circleci/node:12.3
     working_directory: ~/repo
     steps:
-      - checkout
-      - restore_npm_cache
-      - run: yarn install
+      - prepare_code
       - save_npm_cache
       - run: yarn lint
       - run: yarn build
@@ -41,9 +45,7 @@ jobs:
       - image: circleci/node:12.3-browsers
     working_directory: ~/repo
     steps:
-      - checkout
-      - restore_npm_cache
-      - run: yarn install
+      - prepare_code
       - run: yarn build
       - run: sudo npm install -g @lhci/cli@0.3.x
       - run:
