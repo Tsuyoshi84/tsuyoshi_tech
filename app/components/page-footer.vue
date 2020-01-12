@@ -1,8 +1,8 @@
 <template lang="pug">
 footer
-  span
-    | This site is using 
-    a(href='https://fontawesome.com/license' alt='Font Awesome') Font Awesome 
+  a.code-link(href='https://github.com/Tsuyoshi84/tsuyoshi_tech' alt='Source code')
+    include ../assets/svgs/github.svg
+    
 </template>
 
 <script lang="ts">
@@ -13,10 +13,21 @@ export default class extends Vue {}
 </script>
 
 <style lang="sass" scoped>
+$font-color: #aaa
+
 footer
   height: 6rem
   width: 100%
   padding: 2rem
   text-align: center
-  color: #888
+  color: $font-color
+
+  .code-link
+    width: 2rem
+    height: 2rem
+    display: inline-block
+    color: $font-color
+    
+    svg
+      fill: currentColor
 </style>
