@@ -2,16 +2,16 @@
 section.container
   div.item
     social-media-icon(alt="GitHub" color="#24292e" href="https://github.com/Tsuyoshi84")
-      include ../assets/svgs/github-brands.svg
+      include ../assets/svgs/github.svg
   div.item
     social-media-icon(alt="Facebook" color="#4267b2" href="https://www.facebook.com/tsuyoshi.yamaguchi.1232")
-      include ../assets/svgs/facebook-f-brands.svg
+      include ../assets/svgs/facebook.svg
   div.item
     social-media-icon(alt="Twitter" color="#1da1f2" href="https://twitter.com/tsuyoshi84")
-      include ../assets/svgs/twitter-brands.svg
+      include ../assets/svgs/twitter.svg
   div.item
     social-media-icon(alt="Linkedin" color="#0077b5" href="https://www.linkedin.com/in/tsuyoshi-yamaguchi-94954a96")
-      include ../assets/svgs/linkedin-in-brands.svg
+      include ../assets/svgs/linkedin.svg
 </template>
 
 <script lang="ts">
