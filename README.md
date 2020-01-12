@@ -1,4 +1,4 @@
-# My Web Site
+# About me
 
 [![CircleCI](https://circleci.com/gh/Tsuyoshi84/tsuyoshi_tech.svg?style=svg&circle-token=d5f7abcee07016bd30a9d21ae8dc6aa853b74aa1)](https://circleci.com/gh/Tsuyoshi84/tsuyoshi_tech)
 [![codecov](https://codecov.io/gh/Tsuyoshi84/tsuyoshi_tech/branch/master/graph/badge.svg)](https://codecov.io/gh/Tsuyoshi84/tsuyoshi_tech)
@@ -24,5 +24,3 @@ $ yarn run generate
 # analyze bundle size
 $ yarn run analyze
 ```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
