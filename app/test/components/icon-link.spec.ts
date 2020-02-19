@@ -1,8 +1,8 @@
 import { mount } from '@vue/test-utils'
-import SocialMediaIcon from '@/components/social-media-icon.vue'
+import IconLink from '@/components/icon-link.vue'
 
 const makeWrapper = () => {
-  return mount(SocialMediaIcon, {
+  return mount(IconLink, {
     propsData: { alt: 'Example', href: 'https://example.com', color: 'red' },
     slots: {
       default: '<div>slot-content</div>'
@@ -11,7 +11,7 @@ const makeWrapper = () => {
   })
 }
 
-describe('SocialMediaIcon', () => {
+describe('IconLink', () => {
   test('is a Vue instance', () => {
     const wrapper = makeWrapper()
     expect(wrapper.isVueInstance()).toBeTruthy()
