@@ -15,6 +15,14 @@ export default class extends Vue {}
 </script>
 
 <style lang="sass" scoped>
+@mixin clip-background 
+  background-clip: text
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  background-size: 200% 100%
+  background-position: 100%
+  transition: background-position 275ms ease
+
 .header
   display: flex
   justify-content: center
@@ -26,9 +34,13 @@ export default class extends Vue {}
   .link
     margin: 0 1rem
     font-size: 2.0rem
+    font-weight: 700
     color: #5d5d5d
-    &:hover
-      color: #2d2d2d
+    background: linear-gradient(to right, #3500f2, #3500f2 50%, #5d5d5d 50%)
+    @include clip-background
     &.nuxt-link-exact-active
-      color: #160fca
+      background: linear-gradient(to right, #3500f2, #3500f2 50%, #6868d2 50%)
+      @include clip-background
+    &:hover, &.nuxt-link-exact-active:hover
+      background-position: 0 100%
 </style>
