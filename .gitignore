@@ -85,3 +85,6 @@ sw.*
 
 # Lighthouse
 .lighthouseci
+
+# VS Code
+.vscode
