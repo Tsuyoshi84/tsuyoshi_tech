@@ -20,7 +20,7 @@ import IconLink from '~/components/icon-link.vue'
 
 @Component({
   components: { IconLink },
-  head: { title: 'Contact' }
+  head: { title: 'Contact' },
 })
 export default class extends Vue {}
 </script>

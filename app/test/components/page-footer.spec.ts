@@ -4,8 +4,8 @@ import PageFooter from '@/components/page-footer.vue'
 const makeWrapper = () => {
   return mount(PageFooter, {
     stubs: {
-      NuxtLink: RouterLinkStub
-    }
+      NuxtLink: RouterLinkStub,
+    },
   })
 }
 

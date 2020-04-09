@@ -12,7 +12,7 @@ import PageHeader from '~/components/page-header.vue'
 import PageFooter from '~/components/page-footer.vue'
 
 @Component({
-  components: { PageHeader, PageFooter }
+  components: { PageHeader, PageFooter },
 })
 export default class extends Vue {}
 </script>

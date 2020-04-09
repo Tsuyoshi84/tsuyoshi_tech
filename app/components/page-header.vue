@@ -15,7 +15,7 @@ export default class extends Vue {}
 </script>
 
 <style lang="sass" scoped>
-@mixin clip-background 
+@mixin clip-background
   background-clip: text
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent

@@ -9,15 +9,19 @@ const config: Configuration = {
    */
   head: {
     htmlAttrs: {
-      lang: 'en-US'
+      lang: 'en-US',
     },
     title: 'Tsuyoshi Yamaguchi',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Tsuyoshi Yamaguchi' }
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Tsuyoshi Yamaguchi',
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
   /*
@@ -57,10 +61,10 @@ const config: Configuration = {
         loader: 'vue-svg-inline-loader',
         options: {
           /* ... */
-        }
+        },
       })
-    }
-  }
+    },
+  },
 }
 
 export default config

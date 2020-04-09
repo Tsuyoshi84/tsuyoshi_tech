@@ -4,8 +4,8 @@ import PageHeader from '@/components/page-header.vue'
 const makeWrapper = () => {
   return mount(PageHeader, {
     stubs: {
-      NuxtLink: RouterLinkStub
-    }
+      NuxtLink: RouterLinkStub,
+    },
   })
 }
 

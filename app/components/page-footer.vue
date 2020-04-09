@@ -27,7 +27,7 @@ footer
     height: 2rem
     display: inline-block
     color: $font-color
-    
+
     svg
       fill: currentColor
 </style>

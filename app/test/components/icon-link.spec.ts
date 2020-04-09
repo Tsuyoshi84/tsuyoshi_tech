@@ -5,9 +5,9 @@ const makeWrapper = () => {
   return mount(IconLink, {
     propsData: { alt: 'Example', href: 'https://example.com', color: 'red' },
     slots: {
-      default: '<div>slot-content</div>'
+      default: '<div>slot-content</div>',
     },
-    stubs: {}
+    stubs: {},
   })
 }
 
@@ -18,7 +18,7 @@ describe('IconLink', () => {
   })
 
   describe('when not hover', () => {
-    test('should use default color', done => {
+    test('should use default color', (done) => {
       const wrapper = makeWrapper()
       expect(wrapper.html()).toMatchSnapshot()
       done()
@@ -26,7 +26,7 @@ describe('IconLink', () => {
   })
 
   describe('when hover', () => {
-    test('should use given color', done => {
+    test('should use given color', (done) => {
       const wrapper = makeWrapper()
       wrapper.trigger('mouseover')
       wrapper.vm.$nextTick(() => {

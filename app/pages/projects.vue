@@ -7,7 +7,7 @@ section.container
 import { Component, Vue } from 'vue-property-decorator'
 
 @Component({
-  head: { title: 'Projects' }
+  head: { title: 'Projects' },
 })
 export default class extends Vue {}
 </script>
