@@ -47,7 +47,7 @@ const config: Configuration = {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: ['@nuxtjs/sitemap'],
 
   /*
    ** Build configuration
@@ -64,6 +64,13 @@ const config: Configuration = {
         },
       })
     },
+  },
+
+  sitemap: {
+    hostname: 'https://tsuyoshi.tech',
+    gzip: true,
+    exclude: [],
+    routes: [],
   },
 }
 
