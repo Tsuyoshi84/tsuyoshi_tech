@@ -24,5 +24,6 @@
     },
     "types": ["@types/node", "@types/jest", "@nuxt/types"]
   },
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "files": ["app/vue-shim.d.ts"]
 }
