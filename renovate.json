@@ -1,5 +1,7 @@
 {
-  "extends": [
-    "config:base"
-  ]
+  "extends": ["config:base"],
+  "minor": {
+    "groupName": "all dependencies"
+  },
+  "assignees": ["Tsuyoshi84"]
 }
