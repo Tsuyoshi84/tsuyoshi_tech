@@ -1,7 +1,23 @@
 {
   "extends": ["config:base"],
+  "packageRules": [
+    {
+      "packagePatterns": ["^eslint"],
+      "groupName": "eslint packages",
+      "schedule": ["after 1am on sunday"]
+    },
+    {
+      "packagePatterns": ["^pug"],
+      "groupName": "pug packages",
+      "schedule": ["after 1am on sunday"]
+    },
+    {
+      "packagePatterns": ["^jest"],
+      "groupName": "jest packages",
+      "schedule": ["after 1am on sunday"]
+    }
+  ],
   "minor": {
     "groupName": "all dependencies"
-  },
-  "assignees": ["Tsuyoshi84"]
+  }
 }
