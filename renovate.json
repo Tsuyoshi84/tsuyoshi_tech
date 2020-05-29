@@ -2,22 +2,24 @@
   "extends": ["config:base"],
   "packageRules": [
     {
-      "packagePatterns": ["^eslint"],
+      "packagePatterns": ["eslint"],
       "groupName": "eslint packages",
-      "schedule": ["after 1am on sunday"]
+      "schedule": ["after 1am on saturday"]
     },
     {
       "packagePatterns": ["^pug"],
       "groupName": "pug packages",
-      "schedule": ["after 1am on sunday"]
+      "schedule": ["after 1am on saturday"]
     },
     {
       "packagePatterns": ["^jest"],
       "groupName": "jest packages",
-      "schedule": ["after 1am on sunday"]
+      "schedule": ["after 1am on saturday"]
+    },
+    {
+      "packagePatterns": ["^babel"],
+      "groupName": "babel packages",
+      "schedule": ["after 1am on saturday"]
     }
-  ],
-  "minor": {
-    "groupName": "all dependencies"
-  }
+  ]
 }
