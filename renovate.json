@@ -1,19 +1,17 @@
 {
-  "extends": ["config:base"],
+  "extends": [
+    "config:js-app",
+    ":rebaseStalePrs",
+    "packages:test",
+    "packages:linters",
+    ":automergeLinters",
+    ":automergeTesters",
+    ":automergeTypes"
+  ],
   "packageRules": [
-    {
-      "packagePatterns": ["eslint"],
-      "groupName": "eslint packages",
-      "schedule": ["after 1am on saturday"]
-    },
     {
       "packagePatterns": ["^pug"],
       "groupName": "pug packages",
-      "schedule": ["after 1am on saturday"]
-    },
-    {
-      "packagePatterns": ["^jest"],
-      "groupName": "jest packages",
       "schedule": ["after 1am on saturday"]
     },
     {
