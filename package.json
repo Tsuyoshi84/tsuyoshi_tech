@@ -19,7 +19,7 @@
     "lhci": "lhci autorun"
   },
   "dependencies": {
-    "@nuxt/typescript-runtime": "0.4.8",
+    "@nuxt/typescript-runtime": "0.4.9",
     "@nuxtjs/sitemap": "2.3.1",
     "normalize.css": "8.0.1",
     "nuxt": "2.12.2",
