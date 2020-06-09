@@ -1,7 +1,7 @@
 <template lang="pug">
 section.container
   section#title.title
-    div.title-wrapper
+    div.wrapper
       div.primary TY
       div.secondary
         div.first Engineering
@@ -18,12 +18,14 @@ export default class extends Vue {}
 </script>
 
 <style lang="sass" scoped>
+@import '~/css/_variable.sass'
+
 .container
   margin: 0 auto
 
 .title
   height: clamp(40rem, 100vh, 100rem)
-  color: transparent
+  color: rgba(0, 0, 0, 0.2)
   background-clip: text
   -webkit-background-clip: text
   background-attachment: fixed
@@ -32,7 +34,7 @@ export default class extends Vue {}
   justify-content: center
   align-items: center
 
-  .title-wrapper
+  .wrapper
     font-family: 'Oswald', sans-serif
     display: flex
     justify-content: center
@@ -51,6 +53,30 @@ export default class extends Vue {}
 
       .first
         margin: 18px 0 8px
+
+@media #{$width-tablet}
+  .title
+    .wrapper
+      flex-direction: column
+
+      .primary
+        font-size: 30rem
+        margin-right: 0
+
+      .secondary
+        text-align: center
+        font-size: 12rem
+
+@media #{$width-mobile}
+  .title
+    .wrapper
+      flex-direction: column
+
+      .primary
+        font-size: 20rem
+
+      .secondary
+        font-size: 8rem
 
 @-moz-document url-prefix()
   // Firefox has a bug:
