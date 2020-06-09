@@ -25,7 +25,7 @@ export default class extends Vue {}
 
 .title
   height: clamp(40rem, 100vh, 100rem)
-  color: transparent
+  color: rgba(0, 0, 0, 0.2)
   background-clip: text
   -webkit-background-clip: text
   background-attachment: fixed
@@ -54,6 +54,19 @@ export default class extends Vue {}
       .first
         margin: 18px 0 8px
 
+@media #{$width-tablet}
+  .title
+    .wrapper
+      flex-direction: column
+
+      .primary
+        font-size: 30rem
+        margin-right: 0
+
+      .secondary
+        text-align: center
+        font-size: 12rem
+
 @media #{$width-mobile}
   .title
     .wrapper
@@ -61,10 +74,8 @@ export default class extends Vue {}
 
       .primary
         font-size: 20rem
-        margin-right: 0
 
       .secondary
-        text-align: center
         font-size: 8rem
 
 @-moz-document url-prefix()
