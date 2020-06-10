@@ -1,6 +1,6 @@
 <template lang="pug">
 section.container
-  section#title.title
+  div#title.title
     div.wrapper
       div.primary TY
       div.secondary
