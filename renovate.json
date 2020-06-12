@@ -6,7 +6,8 @@
     "packages:linters",
     ":automergeLinters",
     ":automergeTesters",
-    ":automergeTypes"
+    ":automergeTypes",
+    "schedule:weekends"
   ],
   "packageRules": [
     {
