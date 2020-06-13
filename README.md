@@ -23,4 +23,7 @@ $ yarn run generate
 
 # analyze bundle size
 $ yarn run analyze
+
+# update modenizr
+$ yarn modenizr
 ```
