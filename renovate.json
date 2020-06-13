@@ -2,23 +2,19 @@
   "extends": [
     "config:js-app",
     ":rebaseStalePrs",
-    "packages:test",
-    "packages:linters",
-    ":automergeLinters",
-    ":automergeTesters",
-    ":automergeTypes",
+    "group:allNonMajor",
     "schedule:weekends"
   ],
   "packageRules": [
     {
-      "packagePatterns": ["^pug"],
-      "groupName": "pug packages",
-      "schedule": ["after 1am on saturday"]
-    },
-    {
-      "packagePatterns": ["^babel"],
-      "groupName": "babel packages",
-      "schedule": ["after 1am on saturday"]
+      "packageNames": [
+        "ts-jest",
+        "vue-jest",
+        "vue-eslint-parser",
+        "@vue/test-utils"
+      ],
+      "packagePatterns": ["^@types", "^eslint", "^jest", "^prettier"],
+      "groupName": "development dependencies"
     }
   ]
 }
