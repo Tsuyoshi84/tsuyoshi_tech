@@ -16,7 +16,8 @@
     "test:e2e": "jest -c app/e2e/jest.config.js app/e2e --runInBand",
     "test:percy": "percy exec -- yarn test:e2e",
     "format": "prettier --write 'app/**/*.{ts,vue}'",
-    "lhci": "lhci autorun"
+    "lhci": "lhci autorun",
+    "modernizr": "npx modernizr -c modernizr-config.json -d ./app/static/libs/modernizr.min.js"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "0.4.10",

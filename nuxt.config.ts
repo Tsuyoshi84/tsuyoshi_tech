@@ -21,6 +21,12 @@ const config: Configuration = {
         content: 'Tsuyoshi Yamaguchi',
       },
     ],
+    script: [
+      {
+        src: 'libs/modernizr.min.js',
+        defer: true,
+      },
+    ],
   },
 
   /*
@@ -66,7 +72,7 @@ const config: Configuration = {
   },
 
   sitemap: {
-    hostname: 'https://tsuyoshi.tech',
+    hostname: 'https://tsuyoshi.dev',
     gzip: true,
     exclude: [],
     routes: [],

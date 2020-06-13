@@ -23,6 +23,7 @@ export default class extends Vue {}
 .container
   margin: 0 auto
 
+
 .title
   height: clamp(40rem, 100vh, 100rem)
   color: rgba(0, 0, 0, 0.2)
@@ -53,6 +54,12 @@ export default class extends Vue {}
 
       .first
         margin: 18px 0 8px
+
+.no-webp .title
+  background-image: url(~assets/images/top_background.jpg)
+
+.webp .title
+  background-image: url(~assets/images/top_background.webp)
 
 @media #{$width-tablet}
   .title
