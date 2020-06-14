@@ -14051,7 +14051,7 @@ webidl-conversions@^6.0.0:
   resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-6.1.0.tgz#9111b4d7ea80acd40f5270d666621afa78b69514"
   integrity sha512-qBIvFLGiBpLjfwmYAaHPXsn+ho5xZnGvyGvsarywGNc8VyQJUMHJ8OBKGGrPER0okBeMDaan4mNBlgBROxuI8w==
 
-webp-converter-cli@^0.0.5:
+webp-converter-cli@0.0.5:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/webp-converter-cli/-/webp-converter-cli-0.0.5.tgz#55c4fc0124159f557f41389b3ba945b93ebaa160"
   integrity sha1-VcT8ASQVn1V/QTibO6lFuT66oWA=
