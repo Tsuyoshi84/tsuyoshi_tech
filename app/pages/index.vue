@@ -7,13 +7,20 @@ section.container
         div.first Engineering
         div.second Laboratory
   section.menu
-    div unko
+    div.grid-container
+      top-menu-button(bg-color="#2994FF")
+      top-menu-button(bg-color="#E23C41")
+      top-menu-button(bg-color="#111111")
+      top-menu-button(bg-color="#6DBFBC")
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
+import TopMenuButton from '~/components/top/top-menu-button.vue'
 
-@Component
+@Component({
+  components: { TopMenuButton },
+})
 export default class extends Vue {}
 </script>
 
@@ -22,7 +29,6 @@ export default class extends Vue {}
 
 .container
   margin: 0 auto
-
 
 .title
   height: clamp(40rem, 100vh, 100rem)
@@ -94,5 +100,25 @@ export default class extends Vue {}
     background-attachment: scroll
 
 .menu
-  height: 100vh
+  width: 700px
+  height: 500px
+  margin: 0 auto
+
+  .grid-container
+    height: 100%
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr 1fr
+    gap: 20px 30px
+    grid-template-areas: ". ." ". ."
+
+@media #{$width-mobile}
+  .menu
+    width: 300px
+    height: 1000px
+
+    .grid-container
+      grid-template-columns: 1fr
+      grid-template-rows: 1fr 1fr 1fr 1fr
+      grid-template-areas: "." "." "." "."
 </style>
