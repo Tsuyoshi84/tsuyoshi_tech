@@ -1,7 +1,7 @@
 <template lang="pug">
 section.container
-  div#title.title
-    div.wrapper
+  div.title
+    div#title-wrapper.wrapper
       div.primary TY
       div.secondary
         div.first Engineering
@@ -28,15 +28,12 @@ export default class extends Vue {}
 @import '~/css/_variable.sass'
 
 .container
+  max-width: 1028px
   margin: 0 auto
 
 .title
   height: clamp(40rem, 100vh, 100rem)
-  color: rgba(0, 0, 0, 0.2)
-  background-clip: text
-  -webkit-background-clip: text
-  background-attachment: fixed
-  background-image: url(~assets/images/top_background.jpg)
+  color: rgba(0, 0, 0, 0.0)
   display: flex
   justify-content: center
   align-items: center
@@ -47,6 +44,10 @@ export default class extends Vue {}
     justify-content: center
     align-items: center
     text-align: center
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: text
+    -webkit-background-clip: text
 
     .primary
       font-size: 30rem
@@ -61,11 +62,11 @@ export default class extends Vue {}
       .first
         margin: 18px 0 8px
 
-.no-webp .title
-  background-image: url(~assets/images/top_background.jpg)
+.no-webp .wrapper
+  background-image: url(~assets/images/top_background_landscape.jpg)
 
-.webp .title
-  background-image: url(~assets/images/top_background.webp)
+.webp .wrapper
+  background-image: url(~assets/images/top_background_landscape.webp)
 
 @media #{$width-tablet}
   .title
@@ -80,6 +81,12 @@ export default class extends Vue {}
         text-align: center
         font-size: 12rem
 
+  .no-webp .wrapper
+    background-image: url(~assets/images/top_background_portrait.jpg)
+
+  .webp .wrapper
+    background-image: url(~assets/images/top_background_portrait.webp)
+
 @media #{$width-mobile}
   .title
     .wrapper
@@ -90,14 +97,6 @@ export default class extends Vue {}
 
       .secondary
         font-size: 8rem
-
-@-moz-document url-prefix()
-  // Firefox has a bug:
-  // When usign both background-clip:text and background-attachment:fixed at the same time, text does not move when scrolling.
-  // To work around the problem, set background-attachment:scroll here.
-  // https://bugzilla.mozilla.org/show_bug.cgi?id=1313757
-  #title
-    background-attachment: scroll
 
 .menu
   width: 700px
