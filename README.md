@@ -26,4 +26,7 @@ $ yarn run analyze
 
 # update modenizr
 $ yarn modenizr
+
+# generate webp files
+$ scripts/webpc.sh
 ```
