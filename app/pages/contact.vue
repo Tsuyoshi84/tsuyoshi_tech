@@ -25,21 +25,24 @@ import IconLink from '~/components/icon-link.vue'
 export default class extends Vue {}
 </script>
 
-<style lang="sass" scoped>
-.container
-  margin: 0 auto
-  min-height: 90vh
-  display: flex
-  justify-content: center
-  align-items: center
-  text-align: center
+<style lang="scss" scoped>
+.container {
+  margin: 0 auto;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
-  .item
-    margin: 1rem
+  .item {
+    margin: 1rem;
+  }
+}
 
-svg
-  height: 7rem
-  width: 7rem
-  display: block
-  fill: currentColor
+svg {
+  height: 7rem;
+  width: 7rem;
+  display: block;
+  fill: currentColor;
+}
 </style>

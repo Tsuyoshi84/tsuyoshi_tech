@@ -17,14 +17,16 @@ import PageFooter from '~/components/page-footer.vue'
 export default class extends Vue {}
 </script>
 
-<style lang="sass" scoped>
+<style lang="scss" scoped>
 .page-enter-active,
-.page-leave-active
-  transition-property: opacity
-  transition-timing-function: ease-in-out
-  transition-duration: 200ms
+.page-leave-active {
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 200ms;
+}
 
 .page-enter,
-.page-leave-to
-  opacity: 0
+.page-leave-to {
+  opacity: 0;
+}
 </style>
