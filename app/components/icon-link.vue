@@ -19,26 +19,31 @@ export default class extends Vue {
 }
 </script>
 
-<style lang="sass" scoped>
-.box
-  color: #aaa
+<style lang="scss" scoped>
+.box {
+  color: #aaa;
+}
 
-.link-icon
-  display: flex
-  align-items: center
-  justify-content: center
-  width: 10rem
-  height: 10rem
-  border: solid 1px #fff
-  border-radius: 50%
-  padding: 1rem
-  transition: all 0.3s
-  cursor: pointer
-  background-color: white
+.link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 10rem;
+  border: solid 1px #fff;
+  border-radius: 50%;
+  padding: 1rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  background-color: white;
 
-  &:hover, &:active, &:focus
-    transform: rotate(-10deg) translate(-2px, -2px) scale(1.1, 1.1)
-    border: solid 1px #e1e1e1
-    box-shadow: 4px 4px 4px 3px #a8a8a8
-    outline: none
+  &:hover,
+  &:active,
+  &:focus {
+    transform: rotate(-10deg) translate(-2px, -2px) scale(1.1, 1.1);
+    border: solid 1px #e1e1e1;
+    box-shadow: 4px 4px 4px 3px #a8a8a8;
+    outline: none;
+  }
+}
 </style>
