@@ -21,6 +21,7 @@ const config: Configuration = {
         content: 'Tsuyoshi Yamaguchi',
       },
     ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],
     script: [
       {
         src: 'libs/modernizr.min.js',
