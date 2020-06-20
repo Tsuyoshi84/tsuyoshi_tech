@@ -26,7 +26,7 @@
     "normalize.css": "8.0.1",
     "nuxt": "2.13.0",
     "ts-node": "8.10.2",
-    "vue-property-decorator": "8.5.1"
+    "vue-property-decorator": "9.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.10.3",
