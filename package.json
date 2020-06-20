@@ -24,13 +24,13 @@
     "@nuxt/typescript-runtime": "0.4.10",
     "@nuxtjs/sitemap": "2.3.2",
     "normalize.css": "8.0.1",
-    "nuxt": "2.12.2",
+    "nuxt": "2.13.0",
     "ts-node": "8.10.2",
-    "vue-property-decorator": "8.5.0"
+    "vue-property-decorator": "8.5.1"
   },
   "devDependencies": {
-    "@babel/core": "7.10.2",
-    "@babel/preset-env": "7.10.2",
+    "@babel/core": "7.10.3",
+    "@babel/preset-env": "7.10.3",
     "@nuxt/typescript-build": "1.0.3",
     "@nuxtjs/eslint-config-typescript": "2.0.0",
     "@percy/puppeteer": "1.1.0",
@@ -40,7 +40,7 @@
     "@vue/test-utils": "1.0.3",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "26.0.1",
-    "eslint": "7.2.0",
+    "eslint": "7.3.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-prettier": "3.1.4",
     "jest": "26.0.1",
