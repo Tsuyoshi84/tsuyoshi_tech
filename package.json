@@ -5,11 +5,11 @@
   "author": "Tsuyoshi Yamaguchi",
   "private": true,
   "scripts": {
-    "dev": "nuxt-ts --modern=server",
+    "dev": "nuxt-ts dev --modern=server",
     "build": "nuxt-ts build --modern=server",
     "analyze": "nuxt-ts build --modern=server --analyze",
     "start": "nuxt-ts start --modern=server",
-    "generate": "nuxt-ts generate --modern=server",
+    "generate": "nuxt-ts build  --modern=server && nuxt-ts export",
     "precommit": "npm run lint",
     "lint": "eslint 'app/**/*.{ts,vue}'",
     "test": "jest",

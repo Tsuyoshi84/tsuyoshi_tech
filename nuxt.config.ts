@@ -4,6 +4,7 @@ const config: Configuration = {
   mode: 'spa',
   srcDir: 'app/',
   components: true,
+  target: 'static',
 
   /*
    ** Headers of the page
