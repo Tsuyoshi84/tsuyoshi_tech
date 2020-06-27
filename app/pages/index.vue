@@ -16,11 +16,8 @@ section.container
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import TopMenuButton from '~/components/top/top-menu-button.vue'
 
-@Component({
-  components: { TopMenuButton },
-})
+@Component({})
 export default class extends Vue {}
 </script>
 

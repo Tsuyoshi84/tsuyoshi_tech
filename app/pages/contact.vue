@@ -16,10 +16,8 @@ section.container
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import IconLink from '~/components/icon-link.vue'
 
 @Component({
-  components: { IconLink },
   head: { title: 'Contact' },
 })
 export default class extends Vue {}
