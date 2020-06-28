@@ -8,7 +8,7 @@
     "dev": "nuxt-ts dev --modern=server",
     "build": "nuxt-ts build --modern=server",
     "analyze": "nuxt-ts build --modern=server --analyze",
-    "start": "nuxt-ts start --modern=server",
+    "start": "yarn generate && nuxt-ts serve",
     "generate": "nuxt-ts build  --modern=server && nuxt-ts export",
     "precommit": "npm run lint",
     "lint": "eslint 'app/**/*.{ts,vue}'",
