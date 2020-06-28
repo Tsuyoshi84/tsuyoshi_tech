@@ -1,6 +1,6 @@
 module.exports = {
   server: {
-    command: 'yarn start',
+    command: 'yarn serve',
     port: 3000,
   },
   preset: 'jest-puppeteer',

@@ -35,7 +35,7 @@ jobs:
       - prepare_code
       - save_npm_cache
       - run: yarn lint
-      - run: yarn build
+      - run: yarn generate
       - run: yarn test
       - run: yarn test:percy
       - codecov/upload:
