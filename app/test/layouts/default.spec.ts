@@ -6,6 +6,6 @@ describe('Default', () => {
     const wrapper = shallowMount(Default, {
       stubs: ['nuxt'],
     })
-    expect(wrapper.isVueInstance()).toBeTruthy()
+    expect(wrapper.exists()).toBeTruthy()
   })
 })

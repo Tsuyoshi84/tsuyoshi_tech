@@ -10,11 +10,6 @@ const makeWrapper = () => {
 }
 
 describe('PageHeader', () => {
-  test('is a Vue instance', () => {
-    const wrapper = makeWrapper()
-    expect(wrapper.isVueInstance()).toBeTruthy()
-  })
-
   test('generate DOM', () => {
     const wrapper = makeWrapper()
     expect(wrapper.html()).toMatchSnapshot()

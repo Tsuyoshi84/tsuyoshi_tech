@@ -14,7 +14,7 @@ const makeWrapper = () => {
 describe('IconLink', () => {
   test('is a Vue instance', () => {
     const wrapper = makeWrapper()
-    expect(wrapper.isVueInstance()).toBeTruthy()
+    expect(wrapper.exists()).toBeTruthy()
   })
 
   describe('when not hover', () => {

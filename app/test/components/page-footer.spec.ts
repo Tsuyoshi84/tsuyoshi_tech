@@ -12,7 +12,7 @@ const makeWrapper = () => {
 describe('PageFooter', () => {
   test('is a Vue instance', () => {
     const wrapper = makeWrapper()
-    expect(wrapper.isVueInstance()).toBeTruthy()
+    expect(wrapper.exists()).toBeTruthy()
   })
 
   test('generate DOM', () => {

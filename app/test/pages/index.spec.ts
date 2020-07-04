@@ -3,7 +3,9 @@ import Index from '@/pages/index.vue'
 
 describe('Index', () => {
   test('is a Vue instance', () => {
-    const wrapper = mount(Index)
-    expect(wrapper.isVueInstance()).toBeTruthy()
+    const wrapper = mount(Index, {
+      stubs: ['top-menu-button'],
+    })
+    expect(wrapper.exists()).toBeTruthy()
   })
 })
