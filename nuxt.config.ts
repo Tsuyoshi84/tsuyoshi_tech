@@ -1,7 +1,7 @@
 import { Configuration } from '@nuxt/types'
 
 const config: Configuration = {
-  mode: 'spa',
+  mode: 'universal',
   srcDir: 'app/',
   components: true,
   target: 'static',
