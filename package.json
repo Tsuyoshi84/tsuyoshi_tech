@@ -22,7 +22,7 @@
     "webpc": "webpc"
   },
   "dependencies": {
-    "@nuxt/typescript-runtime": "1.0.0",
+    "@nuxt/typescript-runtime": "2.0.0",
     "@nuxtjs/sitemap": "2.4.0",
     "normalize.css": "8.0.1",
     "nuxt": "2.14.4",
