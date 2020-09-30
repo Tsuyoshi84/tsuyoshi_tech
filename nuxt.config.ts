@@ -23,7 +23,16 @@ const config: Configuration = {
         content: 'Tsuyoshi Yamaguchi',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],
+    link: [
+      { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
+      { rel: 'preconnect', href: '//fonts.gstatic.com', crossorigin: true },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap',
+      },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
+    ],
     script: [
       {
         src: 'libs/modernizr.min.js',
