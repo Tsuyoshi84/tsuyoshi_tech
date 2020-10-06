@@ -6,21 +6,21 @@ orbs:
 
 commands:
   restore_npm_cache:
-    description: 'Restore npm cache'
+    description: "Restore npm cache"
     steps:
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "yarn.lock" }}
             - v1-dependencies-
   save_npm_cache:
-    description: 'Save npm cache'
+    description: "Save npm cache"
     steps:
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "yarn.lock" }}
   prepare_code:
-    description: 'Prepare source code'
+    description: "Prepare source code"
     steps:
       - checkout
       - restore_npm_cache
@@ -36,6 +36,7 @@ jobs:
       - save_npm_cache
       - run: yarn lint
       - run: yarn generate
+      - run: yarn bundlesize
       - run: yarn test
       - run: yarn test:percy
       - codecov/upload:
