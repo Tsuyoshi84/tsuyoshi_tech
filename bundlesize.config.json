@@ -1,0 +1,16 @@
+{
+  "files": [
+    {
+      "path": "dist/_nuxt/app.*.js",
+      "maxSize": "30 kB"
+    },
+    {
+      "path": "dist/_nuxt/runtime.*modern.js",
+      "maxSize": "30 kB"
+    },
+    {
+      "path": "dist/_nuxt/pages/**/*.*modern.js",
+      "maxSize": "30 kB"
+    }
+  ]
+}
