@@ -10,5 +10,5 @@ module.exports = {
     'vue/html-self-closing': 0,
     'vue/attributes-order': 0,
   },
-  ignorePatterns: ['./app/static/libs/**/*.*'],
+  ignorePatterns: ['./app/static/libs/**/*.*', '.nuxt/**/*.*'],
 }
