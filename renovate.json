@@ -5,6 +5,7 @@
       "packageNames": [
         "ts-jest",
         "vue-jest",
+        "babel-jest",
         "vue-eslint-parser",
         "@vue/test-utils"
       ],
