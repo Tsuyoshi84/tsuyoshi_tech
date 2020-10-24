@@ -2,7 +2,6 @@
   "extends": [
     "config:js-app",
     ":rebaseStalePrs",
-    "group:allNonMajor",
     "schedule:weekends"
   ],
   "packageRules": [
