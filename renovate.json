@@ -2,6 +2,7 @@
   "extends": ["config:js-app", ":rebaseStalePrs", "schedule:weekends"],
   "packageRules": [
     {
+      "packagePatterns": [".*"],
       "updateTypes": ["patch", "minor"],
       "groupName": "Non-major dependencies",
       "groupSlug": "non-major-dependencies"
