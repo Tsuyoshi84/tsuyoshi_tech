@@ -38,7 +38,7 @@
     "@nuxtjs/eslint-config-typescript": "3.0.0",
     "@percy/puppeteer": "1.1.0",
     "@types/jest": "26.0.14",
-    "@types/node": "13.13.26",
+    "@types/node": "13.13.28",
     "@types/puppeteer": "3.0.2",
     "@vue/test-utils": "1.1.0",
     "babel-core": "7.0.0-bridge.0",
