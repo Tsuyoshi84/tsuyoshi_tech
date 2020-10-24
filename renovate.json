@@ -2,18 +2,7 @@
   "extends": [
     "config:js-app",
     ":rebaseStalePrs",
+    "group:monorepos",
     "schedule:weekends"
-  ],
-  "packageRules": [
-    {
-      "packageNames": [
-        "ts-jest",
-        "vue-jest",
-        "vue-eslint-parser",
-        "@vue/test-utils"
-      ],
-      "packagePatterns": ["^@types", "^eslint", "^jest", "^prettier"],
-      "groupName": "development dependencies"
-    }
   ]
 }
