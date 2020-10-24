@@ -4,7 +4,6 @@
     {
       "packageNames": ["@vue/test-utils"],
       "packagePatterns": [
-        "^@types",
         "eslint",
         "jest",
         "prettier",
@@ -12,15 +11,19 @@
         "bundlesize"
       ],
       "groupName": "Development dependencies",
-      "groupSlug": "dev-dependencies",
-      "prPriority": 10
+      "groupSlug": "dev-dependencies"
     },
     {
-      "packagePatterns": [".*"],
+      "packagePatterns": [
+        "^((?!eslint).)*$",
+        "^((?!jest).)*$",
+        "^((?!prettier).)*$",
+        "^((?!puppeteer).)*$",
+        "^((?!bundlesize).)*$"
+      ],
       "updateTypes": ["patch", "minor"],
       "groupName": "Non-major dependencies",
-      "groupSlug": "non-major-dependencies",
-      "prPriority": 0
+      "groupSlug": "non-major-dependencies"
     }
   ]
 }
