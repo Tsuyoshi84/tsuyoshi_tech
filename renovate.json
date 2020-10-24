@@ -12,13 +12,15 @@
         "bundlesize"
       ],
       "groupName": "Development dependencies",
-      "groupSlug": "dev-dependencies"
+      "groupSlug": "dev-dependencies",
+      "prPriority": 10
     },
     {
       "packagePatterns": [".*"],
       "updateTypes": ["patch", "minor"],
       "groupName": "Non-major dependencies",
-      "groupSlug": "non-major-dependencies"
+      "groupSlug": "non-major-dependencies",
+      "prPriority": 0
     }
   ]
 }
