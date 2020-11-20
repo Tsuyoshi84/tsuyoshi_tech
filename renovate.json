@@ -2,21 +2,22 @@
   "extends": ["config:js-app", ":rebaseStalePrs", "schedule:weekends"],
   "packageRules": [
     {
-      "groupName": "Non-major dependencies",
-      "groupSlug": "non-major-dependencies",
-      "updateTypes": ["patch", "minor"]
-    },
-    {
       "groupName": "Development dependencies",
       "groupSlug": "dev-dependencies",
       "packageNames": ["@vue/test-utils"],
-      "packagePatterns": [
-        "eslint",
-        "jest",
-        "prettier",
-        "puppeteer",
-        "bundlesize"
-      ]
+      "packagePatterns": ["eslint", "jest", "prettier", "puppeteer", "bundlesize"]
+    },
+    {
+      "groupName": "Node.js dependencies",
+      "groupSlug": "node-dependencies",
+      "packageNames": ["node"]
+    },
+    {
+      "groupName": "Non-major dependencies",
+      "groupSlug": "non-major-dependencies",
+      "excludePackageNames": ["@vue/test-utils", "node", "protobufjs"],
+      "excludePackagePatterns": ["eslint", "jest", "prettier", "puppeteer", "bundlesize"],
+      "updateTypes": ["patch", "minor"]
     }
   ]
 }
