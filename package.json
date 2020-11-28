@@ -31,14 +31,14 @@
     "vue-property-decorator": "9.1.2"
   },
   "devDependencies": {
-    "@babel/core": "7.12.7",
+    "@babel/core": "7.12.9",
     "@babel/preset-env": "7.12.7",
     "@nuxt/types": "2.14.7",
     "@nuxt/typescript-build": "2.0.3",
     "@nuxtjs/eslint-config-typescript": "5.0.0",
     "@percy/puppeteer": "1.1.0",
     "@types/jest": "26.0.15",
-    "@types/node": "13.13.32",
+    "@types/node": "13.13.33",
     "@types/puppeteer": "5.4.0",
     "@vue/test-utils": "1.1.1",
     "babel-core": "7.0.0-bridge.0",
