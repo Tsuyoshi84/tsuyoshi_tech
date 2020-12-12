@@ -48,17 +48,6 @@ describe('Web site', () => {
     })
   })
 
-  describe('experiene page', () => {
-    beforeAll(async () => {
-      await page.goto(`${BASE_URL}/experience`)
-    })
-
-    it('should exist', async () => {
-      await expect(page.title()).resolves.toMatch('Experience')
-      await percySnapshot(page, 'Experience page')
-    })
-  })
-
   describe('contact page', () => {
     beforeAll(async () => {
       await page.goto(`${BASE_URL}/contact`)
