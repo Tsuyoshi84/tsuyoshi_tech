@@ -1,0 +1,15 @@
+codecov:
+  require_ci_to_pass: yes
+
+coverage:
+  status:
+    project:
+      default:
+        # basic
+        target: 0%
+        threshold: 50%
+    patch: off
+
+ignore:
+  - "node_modules"
+  - "scripts"
