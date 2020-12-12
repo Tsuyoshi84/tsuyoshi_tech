@@ -52,7 +52,7 @@ jobs:
       - run: sudo npm install -g @lhci/cli@0.6.x
       - run:
           name: lhci autorun
-          command: yarn lhci || echo "LHCI failed!"
+          command: yarn lhci
 
 workflows:
   version: 2
