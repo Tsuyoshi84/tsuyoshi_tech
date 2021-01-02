@@ -13074,7 +13074,18 @@ ts-jest@26.4.4:
     semver "7.x"
     yargs-parser "20.x"
 
-ts-loader@8.0.12, ts-loader@^8.0.3:
+ts-loader@8.0.13:
+  version "8.0.13"
+  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-8.0.13.tgz#2bebeb833570ca46bb9338322a9a29900e988535"
+  integrity sha512-1o1nO6aqouA23d2nlcMSEyPMAWRhnYUU0EQUJSc60E0TUyBNX792RHFYUN1ZM29vhMUNayrsbj2UVdZwKhXCDA==
+  dependencies:
+    chalk "^2.3.0"
+    enhanced-resolve "^4.0.0"
+    loader-utils "^1.0.2"
+    micromatch "^4.0.0"
+    semver "^6.0.0"
+
+ts-loader@^8.0.3:
   version "8.0.12"
   resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-8.0.12.tgz#1de9f1de65176318c1e6d187bfc496182f8dc2a0"
   integrity sha512-UIivVfGVJDdwwjgSrbtcL9Nf10c1BWnL1mxAQUVcnhNIn/P9W3nP5v60Z0aBMtc7ZrE11lMmU6+5jSgAXmGaYw==
@@ -13683,10 +13694,10 @@ vue-style-loader@^4.1.0:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
 
-vue-svg-inline-loader@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/vue-svg-inline-loader/-/vue-svg-inline-loader-2.0.0.tgz#1893ab3c9ae99a6a8443343cd9ebbb97129328b6"
-  integrity sha512-mLQQAiGYhLURpeVqNee+ELEPauHEFqUgtWh8UMIxIgRxUwzS8sLljPLVNfoi2ANSxKOz53DjNN6fHdcraoOBIw==
+vue-svg-inline-loader@2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/vue-svg-inline-loader/-/vue-svg-inline-loader-2.1.2.tgz#3d22977bd44cee0d5788a4ffa42e7a9ed4fb034e"
+  integrity sha512-KgKJd3bf03GhaHKezOvtfcY1MZbUxle6r03iVELtWeJnwz7SBou0YlvJ/6zRhAlemRDG1NbrIZ5GobaWmO+GKg==
   dependencies:
     loader-utils "^2.0.0"
     schema-utils "^3.0.0"
