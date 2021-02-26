@@ -5,12 +5,12 @@
   "author": "Tsuyoshi Yamaguchi",
   "private": true,
   "scripts": {
-    "dev": "nuxt-ts dev --modern=client",
-    "build": "nuxt-ts build --modern=client",
-    "analyze": "nuxt-ts build --modern=client --analyze",
-    "generate": "nuxt-ts generate --modern=client",
-    "serve": "nuxt-ts serve",
-    "start": "yarn generate && nuxt-ts serve",
+    "dev": "nuxt dev --modern=client",
+    "build": "nuxt build --modern=client",
+    "analyze": "nuxt build --modern=client --analyze",
+    "generate": "nuxt generate --modern=client",
+    "serve": "nuxt serve",
+    "start": "yarn generate && nuxt serve",
     "precommit": "npm run lint",
     "lint": "eslint './**/*.{ts,vue}'",
     "test": "jest",
@@ -23,10 +23,9 @@
     "bundlesize": "bundlesize"
   },
   "dependencies": {
-    "@nuxt/typescript-runtime": "2.0.1",
     "@nuxtjs/sitemap": "2.4.0",
     "normalize.css": "8.0.1",
-    "nuxt": "2.15.1",
+    "nuxt": "2.15.2",
     "ts-node": "9.1.1",
     "vue-property-decorator": "9.1.2"
   },
