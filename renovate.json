@@ -4,20 +4,36 @@
     {
       "groupName": "Development dependencies",
       "groupSlug": "dev-dependencies",
-      "packageNames": ["@vue/test-utils"],
-      "packagePatterns": ["eslint", "jest", "prettier", "puppeteer", "bundlesize"]
+      "matchPackageNames": ["@vue/test-utils"],
+      "matchPackagePatterns": [
+        "eslint",
+        "jest",
+        "prettier",
+        "puppeteer",
+        "bundlesize"
+      ]
     },
     {
       "groupName": "Node.js dependencies",
       "groupSlug": "node-dependencies",
-      "packageNames": ["node"]
+      "matchPackageNames": ["node"]
     },
     {
       "groupName": "Non-major dependencies",
       "groupSlug": "non-major-dependencies",
-      "excludePackageNames": ["@vue/test-utils", "node", "protobufjs"],
-      "excludePackagePatterns": ["eslint", "jest", "prettier", "puppeteer", "bundlesize"],
+      "excludematchPackageNames": ["@vue/test-utils", "node", "protobufjs"],
+      "excludePackagePatterns": [
+        "eslint",
+        "jest",
+        "prettier",
+        "puppeteer",
+        "bundlesize"
+      ],
       "updateTypes": ["patch", "minor"]
+    },
+    {
+      "matchPackageNames": ["sass-loader"],
+      "allowedVersions": "<11.0"
     }
   ]
 }
