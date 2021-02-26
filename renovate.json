@@ -21,7 +21,7 @@
     {
       "groupName": "Non-major dependencies",
       "groupSlug": "non-major-dependencies",
-      "excludematchPackageNames": ["@vue/test-utils", "node", "protobufjs"],
+      "excludePackageNames": ["@vue/test-utils", "node", "protobufjs"],
       "excludePackagePatterns": [
         "eslint",
         "jest",
