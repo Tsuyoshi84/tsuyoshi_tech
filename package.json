@@ -30,10 +30,10 @@
     "vue-property-decorator": "9.1.2"
   },
   "devDependencies": {
-    "@babel/core": "7.12.17",
-    "@babel/preset-env": "7.12.17",
-    "@nuxt/types": "2.15.1",
-    "@nuxt/typescript-build": "2.0.5",
+    "@babel/core": "7.13.8",
+    "@babel/preset-env": "7.13.8",
+    "@nuxt/types": "2.15.2",
+    "@nuxt/typescript-build": "2.0.6",
     "@nuxtjs/eslint-config-typescript": "5.0.0",
     "@percy/puppeteer": "1.1.0",
     "@types/jest": "26.0.20",
@@ -56,7 +56,7 @@
     "sass-loader": "10.1.1",
     "ts-jest": "26.5.2",
     "ts-loader": "8.0.17",
-    "typescript": "4.1.5",
+    "typescript": "4.2.2",
     "vue-class-component": "7.2.6",
     "vue-eslint-parser": "7.5.0",
     "vue-jest": "3.0.7",
