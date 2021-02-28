@@ -1,5 +1,5 @@
 {
-  "extends": ["config:js-app", ":rebaseStalePrs", "schedule:weekends"],
+  "extends": ["config:js-app", ":rebaseStalePrs", "schedule:weekends", ":automergeMinor"],
   "packageRules": [
     {
       "groupName": "Development dependencies",
