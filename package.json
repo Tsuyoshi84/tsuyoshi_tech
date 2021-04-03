@@ -25,14 +25,14 @@
   "dependencies": {
     "@nuxtjs/sitemap": "2.4.0",
     "normalize.css": "8.0.1",
-    "nuxt": "2.15.3",
+    "nuxt": "2.15.4",
     "ts-node": "9.1.1",
     "vue-property-decorator": "9.1.2"
   },
   "devDependencies": {
     "@babel/core": "7.13.14",
     "@babel/preset-env": "7.13.12",
-    "@nuxt/types": "2.15.3",
+    "@nuxt/types": "2.15.4",
     "@nuxt/typescript-build": "2.1.0",
     "@nuxtjs/eslint-config-typescript": "6.0.0",
     "@percy/puppeteer": "1.1.0",
