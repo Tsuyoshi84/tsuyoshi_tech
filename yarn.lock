@@ -2040,7 +2040,7 @@
   resolved "https://registry.yarnpkg.com/@percy/logger/-/logger-1.0.0-beta.47.tgz#72d91b693b43c59f1cccffdfafec70adc9ffc1a8"
   integrity sha512-6mDHvIQ8wJCN7dd9bnnKtT/VrE+HBTB+U9C7a7vSakC35DnY4QrxH1sbK4hAO8wc2aw6YR3vepX2w/ZYpeuqnA==
 
-"@percy/puppeteer@^2.0.0":
+"@percy/puppeteer@2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@percy/puppeteer/-/puppeteer-2.0.0.tgz#f9a06f1572a1966177a95eb336ec827a98675b3e"
   integrity sha512-AAErUA1NEELBmOIscHBJB064+6x7N2ZIA9EisBfB6ff1HJK58t2x7VGRNQjGsXvq/RP0wrLzmUY3uSSb2gQhVQ==
@@ -11357,7 +11357,7 @@ punycode@^2.1.0, punycode@^2.1.1:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
-puppeteer@^8.0.0:
+puppeteer@8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-8.0.0.tgz#a236669118aa795331c2d0ca19877159e7664705"
   integrity sha512-D0RzSWlepeWkxPPdK3xhTcefj8rjah1791GE82Pdjsri49sy11ci/JQsAO8K2NRukqvwEtcI+ImP5F4ZiMvtIQ==
