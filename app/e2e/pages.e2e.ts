@@ -1,5 +1,5 @@
 import puppeteer, { Page, Browser } from 'puppeteer'
-import { percySnapshot } from '@percy/puppeteer'
+import percySnapshot from '@percy/puppeteer'
 
 describe('Web site', () => {
   const BASE_URL = 'http://localhost:3000'
