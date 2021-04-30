@@ -1,5 +1,10 @@
 {
-  "extends": ["config:js-app", ":rebaseStalePrs", "schedule:weekends", ":automergeMinor"],
+  "extends": [
+    "config:js-app",
+    ":rebaseStalePrs",
+    "schedule:weekends",
+    ":automergeMinor"
+  ],
   "packageRules": [
     {
       "groupName": "Development dependencies",
@@ -34,6 +39,10 @@
     {
       "matchPackageNames": ["sass-loader"],
       "allowedVersions": "<11.0"
+    },
+    {
+      "matchPackageNames": ["ts-loader"],
+      "allowedVersions": "<9.0"
     }
   ]
 }
