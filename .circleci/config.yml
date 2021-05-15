@@ -7,7 +7,7 @@ orbs:
 executors:
   default:
     docker:
-      - image: cimg/node:14.16.1-browsers
+      - image: cimg/node:14.17.0-browsers
 
 commands:
   restore_npm_cache:
