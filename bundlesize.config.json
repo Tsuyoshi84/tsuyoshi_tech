@@ -2,7 +2,7 @@
   "files": [
     {
       "path": "dist/_nuxt/*.modern.js",
-      "maxSize": "50 kB"
+      "maxSize": "100 kB"
     }
   ]
 }
