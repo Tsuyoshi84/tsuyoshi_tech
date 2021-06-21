@@ -20,4 +20,5 @@ module.exports = {
     '!<rootDir>/app/e2e/*.*',
     '!<rootDir>/**/*.d.ts',
   ],
+  testEnvironment: 'jsdom',
 }
